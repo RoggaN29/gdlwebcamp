@@ -1,0 +1,119 @@
+/* -------------------------------------------------------------------------------------
+                               Interna de registro
+   -------------------------------------------------------------------------------------
+*/
+
+form.registro{
+    h3{
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 0 0 ;
+    }
+    label{
+        margin-bottom: 5px;
+    }
+    #error{
+        clear: both;
+        padding: 20px;
+        text-align: center;
+        display: none;
+    }
+    div.caja{
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+        margin: 10px;
+        .campo{
+            padding: 20px;
+            @media(min-width:768px){
+                float: left;
+                width: 33.3%;
+            }
+        }
+    }
+    div.paquetes{
+        .tabla-precio{
+            &:hover{
+                transform: none;
+                box-shadow: none;
+            }
+            input{
+                clear: both;
+                width: 100px;
+                margin: 10px auto 0 auto;
+                display: block;
+            }
+        }
+    }
+    div.eventos{
+        .contenido-dia{
+            padding: 20px;
+            display: none;
+            > div{
+                @media(min-width:768px){
+                    float: left;
+                    width: 33.3%;
+                }
+                p{
+                    text-align: left;
+                    font-weight: bold;
+                }
+                label{
+                    display: block;
+                    margin-bottom: 10px;
+                    time{
+                        color: $naranja;
+                        font-weight: bold;
+                    }
+                }
+                input{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------------------
+                               Resumen de registro
+   -------------------------------------------------------------------------------------
+*/
+
+.resumen{
+    p{
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    input{
+        display: block;
+        margin: 0 auto;
+    }
+    .extras{
+        float: left;
+        width: 50%;
+        padding: 30px;
+        .orden{
+            text-align: left;
+            margin-bottom: 10px;
+            input{
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    .total{
+        float: right;
+        width: 50%;
+        padding: 30px;
+    }
+    #lista-productos{
+        display: none;
+        background-color: #e1e1e1;
+        padding: 20px;
+    }
+    #suma-total{
+        text-align: center;
+        font-size: 2em;
+        color: $naranja;
+    }
+}
+

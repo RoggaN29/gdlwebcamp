@@ -1,0 +1,106 @@
+/* Estilos header */
+
+header{
+    .hero{
+        background-image: url('/img/encabezado.jpg');
+        height: 100vh; 
+        background-position: top center;
+        background-size: cover;
+        .contenido-header{
+            padding-top: 40px;
+            nav.redes-sociales{
+                text-align: center;
+                a{
+                    color: #fff;
+                    font-size: 2em;
+                    margin-right: 20px;
+                    &:last-child{
+                        margin-right: 0;  
+                    }
+                }
+            }
+            .informacion-evento{
+                text-align: center;
+                color: #fff;
+                h1{
+                    font-family: 'PT Sans', sans-serif;
+                    font-size: 5.8vw;
+                    text-transform:  uppercase;
+                    @media(min-width:768px){
+                        font-size: 11.5vw;
+                        margin: 0;
+                        line-height: 1;
+                    }
+                    span{
+                        position: relative;
+                        text-shadow: 0 0 30px #000;
+                        @media(min-width:992px){
+                            &.char1{
+                                top: 20px;right: 20px;
+                            }
+                            &.char2{
+                                top: 0;left: -20px;
+                            }
+                            &.char3{
+                                top: 10px;right: 20px;
+                            }
+                            &.char4{
+                                top: 5px;right: 10px;
+                            }
+                            &.char5{
+                               top: 15px;right: 10px; 
+                            }
+                            &.char6{
+                                top: 5px;right: 10px;
+                            }
+                            &.char7{
+                                top: 20px;right: -10px;
+                            }
+                            &.char8{
+                               top: 0px;right: 10px; 
+                            }
+                            &.char9{
+                                top: 10px;right: 20px;
+                            }
+                            &.char10{
+                                top: 20px;right: 20px;
+                            }
+                        }
+                    }
+                }
+                p{
+                    margin: 0;
+                    display: inline;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    &.fecha{
+                        float: left
+                    }
+                    &.ciudad{
+                        float: right;
+                        text-align: right;
+                    }
+                    &.slogan{
+                        text-transform: none;
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                    i{
+                        color: $naranja;
+                        font-size: 2.4rem;
+                    }
+                }
+                @media(min-width:768px){
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                }
+            }
+            @media(min-width:768px){
+                padding-top: 10px;
+            }
+        }
+    } 
+}
+

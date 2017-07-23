@@ -1,0 +1,85 @@
+/* Estilos menu desktop */
+
+div.barra{
+    background-color: $gris;
+    padding: 20px 0;
+    .logo{
+        width: 80%;
+        float: left;
+        img{
+            width: 100%;
+        }
+        @media(min-width:768px){
+            width: 33%;
+        }
+    }
+    nav.navegacion-principal{  
+        display: none;
+        width: 100%;
+         
+        @media(min-width:768px){
+            width: 67%; 
+            float: right;
+            text-align: right;
+            display: block;
+        }
+        a{
+            font-family: 'Oswald', sans-serif;
+            color: #fff;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all .6s ease;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            @media(min-width:768px){
+                padding: 10px 10px;
+                display: inline-block;
+                width: auto;
+                text-align: center;
+                margin: 0 10px 0 0;
+            }
+            &:hover{
+                background-color: $naranja;
+            }
+            &:last-child{
+                border: 2px solid $naranja;
+                color: $naranja;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &.fixed{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+
+
+/* Estilos menu movil */
+div.menu-movil{
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+    span{
+        height: 8px;
+        margin-bottom: 6px;
+        background-color: #fff;
+        display: block;
+    }
+    @media(min-width:768px){
+        display: none;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,48 @@
+/*
+*
+*   Índice
+*   
+*   1. Colores 
+*   2. Tipografías
+*   3. Mixins
+*   4. Puntos de ruptura
+*   5. Otros
+*
+***********************************/
+
+
+// 1. Colores 
+$naranja : #fe4918; 
+$gris: #353535;
+
+
+// 2. Tipografías
+$letra-sans: 'Open Sans', sans-serif;
+$letra-oswald: 'Oswald', sans-serif;
+$letra-pt: 'PT Sans', sans-serif;
+
+
+// 3. Mixins
+@mixin sf-sprite( $x:0, $y:0 ){
+    background: {
+        color: transparent;
+        image: url('/images/sf-sprite.png');
+        position: $x $y;
+    }
+}
+
+
+// 4. Puntos de ruptura
+$viewport-mobilelandscape : '550px';
+$viewport-tablet : '768px';
+
+/* Estas son las clases de materialize, por si sirve:
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1326px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1325px !default;
+*/
+
+// 5. Otros 

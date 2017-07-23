@@ -1,0 +1,17 @@
+body.conferencia{
+
+    .navegacion-principal{
+        a{
+            &.activo{
+                border-bottom: 2px solid $naranja;
+            }
+
+        }
+    }
+    div.galeria{
+        a{
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+}

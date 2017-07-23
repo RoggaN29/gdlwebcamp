@@ -1,0 +1,9 @@
+section.calendario{
+    div.dia{
+        width: 50%;
+        float: left;
+        &:hover{
+            background-color: #e1e1e1;
+        }
+    }
+}
