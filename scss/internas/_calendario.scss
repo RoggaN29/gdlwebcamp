@@ -1,9 +1,43 @@
-section.calendario{
-    div.dia{
-        width: 50%;
-        float: left;
-        &:hover{
-            background-color: #e1e1e1;
+section#schedule{
+    div.calendario{
+        h3{
+            background-color: $naranja;
+            clear: both;
+            color: #fff;
+            padding: 10px 0;  
+            text-align: center;
+        }
+        div.dia{
+            width: 50%;
+            float: left;
+            border: 2px solid #e1e1e1;
+            min-height: 240px;
+            padding-top: 20px;
+            transition: all .3s ease;
+            &:hover{
+                background-color: #e1e1e1;
+                -webkit-transform: scale(1.1);
+            }
+            @media(min-width:768px){
+                width: 33%;
+            }
+            p{
+                font-size: 1em;
+                &.titulo{
+                    color: $naranja;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+            i{
+                color: $naranja;
+                font-size: 1.6em;
+            }            
+        }
+        &::after{
+            clear: both;
+            display: block;
+            content: '';
         }
     }
 }
